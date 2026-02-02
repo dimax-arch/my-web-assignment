@@ -1,0 +1,110 @@
+/* --- General Styles --- */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* --- Requirement 3: Skip Link (Position Property) --- */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #222;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+    text-decoration: none;
+}
+
+.skip-link:focus {
+    top: 0; /* Only visible on focus */
+}
+
+/* --- Requirement 4: Navigation Styling (at least 3 CSS properties) --- */
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #f4f4f4;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    border-radius: 8px;
+}
+
+/* --- Requirement 7: Navigation (Flex Property) --- */
+nav a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* --- Requirement 8: Hover Pseudo-class --- */
+nav a:hover {
+    color: #ffffff;
+    background-color: #0066cc;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Requirement 4 & 5: Box Model on Images --- */
+img {
+    border: 4px solid #333;
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Requirement 6: Grid Property --- */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 15px;
+    padding: 20px;
+}
+
+/* --- Requirement 9: nth-child Selector --- */
+/* Every second image in the grid gets a different border color/radius */
+.grid-container img:nth-child(even) {
+    border-color: #ff6600;
+    border-radius: 50px;
+}
