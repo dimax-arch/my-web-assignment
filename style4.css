@@ -6,6 +6,7 @@ body {
     padding: 0;
     color: #333;
     background-color: #ffffff;
+    position: relative; /* Needed for absolute positioning of skip-link */
 }
 
 header {
@@ -45,10 +46,13 @@ h1, h2, h3 {
     padding: 8px;
     z-index: 100;
     text-decoration: none;
+    border-radius: 0 0 4px 0;
 }
 
-.skip-link:focus {
-    top: 0; /* Only visible on focus */
+/* Make skip-link visible when focused or hovered for better UX */
+.skip-link:focus,
+.skip-link:hover {
+    top: 0; /* Only visible on focus or hover */
 }
 
 /* --- Requirement 4: Navigation Styling (at least 3 CSS properties) --- */
